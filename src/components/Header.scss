@@ -1,7 +1,9 @@
+@import "../utils/variables.scss";
+
 .header-top {
   display: flex;
   width: 100%;
-  background-color: lighten($color: rgb(5, 89, 216), $amount: 15);
+  background-color: lighten($color: $primary-color, $amount: 15);
 
   .container-buttons {
     width: 100%;
@@ -13,11 +15,25 @@
       color: white;
       background-color: transparent;
       justify-self: flex-end;
+      border: none;
+      margin: 3%;
+      font-size: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
     &-trial-button {
       background-color: black;
       color: white;
-      justify-items: flex-end;
+      background-color: lighten($color: $secondary-color, $amount: 20);
+      align-self: center;
+      font-size: 1rem;
+      padding: 8px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   h2 {
@@ -30,10 +46,34 @@
 .header-bottom {
   display: flex;
   width: 100%;
-  background-color: lighten($color: #000000, $amount: 20);
+  background-color: lighten($color: $secondary-color, $amount: 20);
 
   h3 {
     color: white;
     margin-left: 8%;
+  }
+}
+
+@media (max-width: 414px) {
+  .header-top {
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    .container-buttons {
+      margin-right: 2%;
+      &-login {
+        font-size: 0.8rem;
+      }
+      &-trial-button {
+        font-size: 0.8rem;
+        padding: 3px;
+      }
+    }
+  }
+  .header-bottom {
+    h3 {
+      font-size: 1rem;
+    }
   }
 }
