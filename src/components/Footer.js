@@ -1,11 +1,12 @@
 import React from "react";
 import FooterIcons from "./FooterIcons";
+import FooterLinks from "./FooterLinks";
 import "./Footer.scss";
 
 function Footer() {
   return (
     <div className="footer">
-      <h2 style={{ color: "white" }}>Footer</h2>
+      <FooterLinks />
       <FooterIcons />
     </div>
   );
