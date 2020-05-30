@@ -1,0 +1,16 @@
+.container-home {
+  display: flex;
+  margin-left: 8%;
+  flex-wrap: wrap;
+  overflow: scroll;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-home {
+    margin-left: -2%;
+  }
+}
