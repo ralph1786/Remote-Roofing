@@ -1,3 +1,5 @@
+@import "../utils/animations.scss";
+
 .container-home {
   display: flex;
   margin-left: 8%;
@@ -6,6 +8,7 @@
 
   a {
     text-decoration: none;
+    animation: FadeIn 2s ease-in;
   }
 }
 
