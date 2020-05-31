@@ -17,7 +17,6 @@ function App({ location }) {
         <Route path="/" render={() => <Home />} />
       </Switch>
       <Footer location={location} />
-      <p>Learn React</p>
     </div>
   );
 }
