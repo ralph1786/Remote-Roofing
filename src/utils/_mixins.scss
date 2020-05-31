@@ -1,0 +1,16 @@
+@mixin seriesMovieContainer {
+  display: flex;
+  margin-left: 8%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 8%;
+
+  //this css class is to manipulate the spinner from react spinner.
+  .css-0 {
+    margin: 0 auto;
+  }
+
+  img {
+    @extend .css-0;
+  }
+}
