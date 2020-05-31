@@ -1,0 +1,37 @@
+ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 5%;
+  padding-top: 25px;
+  li {
+    color: darken($color: white, $amount: 25);
+    font-size: 0.8rem;
+    margin-left: 1%;
+    border-right: 1px solid darken($color: white, $amount: 25);
+    padding-right: 1%;
+
+    &:last-child {
+      border: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 414px) {
+  ul {
+    margin-left: -8%;
+    li {
+      font-size: 0.3rem;
+      padding-right: 3%;
+      margin-left: 3%;
+    }
+  }
+}
