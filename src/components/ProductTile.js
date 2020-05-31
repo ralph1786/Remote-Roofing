@@ -4,7 +4,7 @@ import "./ProductTile.scss";
 function ProductTile(props) {
   const { image, title } = props;
   return (
-    <div className="container">
+    <div className="container-product-tile">
       <img
         src={image}
         className="poster"
