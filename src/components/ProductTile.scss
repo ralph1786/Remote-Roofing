@@ -1,8 +1,10 @@
-.container {
+@import "../utils/animations.scss";
+
+.container-product-tile {
   width: 150px;
   height: 210px;
   margin: 20px;
-
+  animation: FadeIn 2s ease-in;
   img {
     width: 100%;
     height: 200px;
