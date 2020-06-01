@@ -1,19 +1,19 @@
 import React from "react";
-import Movies from "./Movies";
-import ProductTile from "../components/ProductTile";
+import Series from "./Series";
 import { PulseLoader } from "react-spinners";
 import { shallow } from "enzyme";
+import ProductTile from "../components/ProductTile";
 
 let wrapper;
 
 beforeEach(() => {
-  wrapper = shallow(<Movies />);
+  wrapper = shallow(<Series />);
 });
 
 it("checks that the PulseLoader component is rendered", () => {
   expect(wrapper.find(PulseLoader)).toHaveLength(1);
 });
 
-it("Movies component to render ProductTile component", async () => {
+it("checks that the ProductTile component is rendered", () => {
   expect(wrapper.find(ProductTile)).toBeTruthy();
 });
