@@ -5,9 +5,9 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import AppleStore from "../Assets/icons/apple-store.svg";
-import GoogleStore from "../Assets/icons/google-play.svg";
-import Microsoft from "../Assets/icons/microsoftBadge.svg";
+import AppleStore from "../../Assets/icons/apple-store.svg";
+import GoogleStore from "../../Assets/icons/google-play.svg";
+import Microsoft from "../../Assets/icons/microsoftBadge.svg";
 import "./FooterIcons.scss";
 
 function FooterIcons() {
