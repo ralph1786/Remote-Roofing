@@ -6,5 +6,6 @@ Exciting and new platform where you are able to quickly and easily stream your f
 ## Setup
 To setup this application please follow these instructions:
 
-    1. Clone this repository into your computer by clicking the *Clone or download* button.
-    2. Once you have cloned the repository you must run `npm install or yarn install ` to install all the necessary dependencies.
+1. Clone this repository by clicking the *Clone or download* button.
+2. Run the `git clone` command on your terminal to clone this repository and add the link provided by GitHub.
+3. Once you have cloned the repository you must run `npm install or yarn install ` to install all the  necessary dependencies.
