@@ -43,7 +43,7 @@ function Series() {
           alt="displays error message due to an error in our part."
         />
       )}
-      {content}
+      <ul className="product-tile-list">{content}</ul>
     </div>
   );
 }

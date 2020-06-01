@@ -4,16 +4,4 @@
   @include seriesMovieContainer;
 }
 
-@media (max-width: 414px) {
-  .container-series {
-    margin-right: 1%;
-    margin-left: 4%;
-  }
-}
-
-@media (max-width: 375px) {
-  .container-series {
-    margin-right: -1%;
-    margin-left: -1%;
-  }
-}
+@include mediaQuerySeriesMovie(container-series);

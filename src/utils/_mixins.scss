@@ -1,9 +1,9 @@
 @mixin seriesMovieContainer {
   display: flex;
-  margin-left: 8%;
+  margin-left: 2%;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: 8%;
+  margin-right: 2%;
 
   //this css class is to manipulate the spinner from react spinner.
   .css-0 {
@@ -12,5 +12,26 @@
 
   img {
     @extend .css-0;
+  }
+
+  .product-tile-list {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+@mixin mediaQuerySeriesMovie($category) {
+  @media (max-width: 414px) {
+    .#{$category} {
+      margin-right: 0;
+      margin-left: 8%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .#{$category} {
+      margin-right: 0;
+      margin-left: 6%;
+    }
   }
 }

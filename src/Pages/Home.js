@@ -7,14 +7,14 @@ import "./Home.scss";
 
 function Home() {
   return (
-    <div className="container-home">
+    <ul className="container-home">
       <Link to="/series">
         <ProductTile image={Series} title="Popular Series" />
       </Link>
       <Link to="/movies">
         <ProductTile image={Movies} title="Popular Movies" />
       </Link>
-    </div>
+    </ul>
   );
 }
 
