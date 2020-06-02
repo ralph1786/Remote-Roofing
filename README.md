@@ -47,10 +47,10 @@ I decided to take advantage of some of the latest React and one of those was to 
 
 I separated the application into three distinct sections(Header, Content, Footer). The Header and Footer sections contain static information and are being reused throughout the different pages in the application. The Content section contains dynamic data. The `react-router-dom` package was used to show different components with different data depending on the page you navigate to.
 
-
+----------------
 I believe that no application or software is perfect and there is always room for improvement. Something I definitely would like to improve is the responsiveness of the application, especially how it looks in very small devices as well as very large devices(like TVs). I believe in accessibility for everyone and everywhere. 
 
-Another aspect of the application I would like to improve revolves around the area of performance specifically when it comes to the data that is being retrieved from the JSON feed. Currently the JSON feed provides a list of 100 series and movies but we are only displaying 21 of them. In other words we are over-fetching data and this can have a negative impact on the performance of the application. To fix this issue I will probably use GraphQL to only request and receive the data that I need.
+Another aspect of the application I would like to improve revolves around the area of performance, specifically when it comes to the data that is being retrieved from the JSON feed. Currently the JSON feed provides a list of 100 series and movies but we are only displaying 21 of them. In other words we are over-fetching data and this can have a negative impact on the performance of the application. To fix this issue I will probably use GraphQL to only request and receive the data that I need.
 
-
-If I was allocated more time I would probably do additional research in ways that I can provide a better user experience.
+-------------------
+If I was allocated more time I would probably do additional research in ways that I can provide a better user experience and I also would've created a better roadmap for building the application. 
