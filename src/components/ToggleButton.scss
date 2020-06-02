@@ -1,0 +1,70 @@
+@mixin togglePosition {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transition: 0.5s;
+}
+
+@mixin togglePositionBefore {
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  top: 8px;
+  transition: 0.5s;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  width: calc(90px / 1.5);
+  height: calc(55px / 1.5);
+}
+
+.slider {
+  @include togglePosition;
+}
+
+.slider:before {
+  @include togglePositionBefore();
+  background-color: black;
+}
+
+.switch input {
+  display: none;
+}
+
+input:checked + .slider {
+  background-color: rgb(41, 41, 245);
+}
+
+input:checked + .slider:before {
+  transform: translateX(33px) rotateZ(45deg);
+  background: yellow;
+}
+
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round:before {
+  width: calc(43% / 1);
+  height: calc(43% / 1);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: rotateZ(-45deg);
+}
+
+@media (max-width: 414px) {
+  .switch {
+    width: calc(90px / 2.2);
+    height: calc(55px / 2.2);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(23px) rotateZ(45deg);
+  }
+}
