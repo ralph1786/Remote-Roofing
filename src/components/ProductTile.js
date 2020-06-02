@@ -2,7 +2,6 @@ import React from "react";
 import "./ProductTile.scss";
 
 function ProductTile(props) {
-  console.log("tile");
   const { image, title, isDarkMode } = props;
   return (
     <li className="container-product-tile">
