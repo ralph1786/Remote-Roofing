@@ -29,7 +29,7 @@ It bundles React in production mode and optimizes the build for the best perform
 
 ## Dependencies
 
-Below is a list of additional dependencies used:
+Below is a list of additional dependencies used for the application:
 
 1. `axios` -> Promise based HTTP client for the browser and node.js. It serves as an alternative to the *fetch* api.
    1. This lightweight package in combination with ES6 `async/await` allows you to write clean and more readable code.
