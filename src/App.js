@@ -17,7 +17,6 @@ function App({ location }) {
   }, [darkMode]);
 
   const toggleDarkMode = () => {
-    console.log("fired");
     setDarkMode((prevState) => !prevState);
   };
 
