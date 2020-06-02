@@ -22,5 +22,9 @@
 @media (max-width: 375px) {
   .container-home {
     margin-left: -2%;
+
+    a {
+      margin-left: 0;
+    }
   }
 }
