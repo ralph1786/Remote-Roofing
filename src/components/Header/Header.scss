@@ -50,11 +50,20 @@
 .header-bottom {
   display: flex;
   width: 100%;
-  background-color: lighten($color: $secondary-color, $amount: 20);
+  background-color: lighten($color: $secondary-color, $amount: 28);
 
   h3 {
     color: white;
     margin-left: 8%;
+    width: 50%;
+  }
+
+  .toggle-container {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
   }
 }
 

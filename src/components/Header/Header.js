@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import ToggleButton from "../ToggleButton";
 import "./Header.scss";
 
-function Header({ location }) {
+function Header({ location, toggleDarkMode, isDarkMode }) {
   const headerMessage = (pathname) => {
     if (pathname === "/series") {
       return "Series";
@@ -27,6 +28,7 @@ function Header({ location }) {
       </section>
       <section className="header-bottom">
         <h3>Popular {headerMessage(location.pathname)}</h3>
+        <ToggleButton toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </section>
     </Fragment>
   );

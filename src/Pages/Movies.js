@@ -7,7 +7,7 @@ import ErrorMessage from "../Assets/images/errorMessage.webp";
 import { filterAndSort } from "../helper/filterSort";
 import "./Movies.scss";
 
-function Movies() {
+function Movies({ isDarkMode }) {
   const [listMovies, setListMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
@@ -31,11 +31,19 @@ function Movies() {
   }, []);
 
   const content = listMovies.map(({ title, images }) => (
-    <ProductTile key={uuid()} title={title} image={images["Poster Art"].url} />
+    <ProductTile
+      key={uuid()}
+      title={title}
+      image={images["Poster Art"].url}
+      isDarkMode={isDarkMode}
+    />
   ));
 
   return (
-    <div className="container-movies">
+    <div
+      className="container-movies"
+      style={{ backgroundColor: isDarkMode ? "#1a1a1a" : "white" }}
+    >
       <PulseLoader size={50} color={"#2a7dfa"} loading={isLoading} />
       {errorMessage && (
         <img

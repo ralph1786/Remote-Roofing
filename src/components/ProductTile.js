@@ -2,7 +2,8 @@ import React from "react";
 import "./ProductTile.scss";
 
 function ProductTile(props) {
-  const { image, title } = props;
+  console.log("tile");
+  const { image, title, isDarkMode } = props;
   return (
     <li className="container-product-tile">
       <img
@@ -10,7 +11,9 @@ function ProductTile(props) {
         className="poster"
         alt="Poster illustrating a tv series"
       />
-      <span className="title">{title}</span>
+      <span className="title" style={{ color: isDarkMode ? "white" : "black" }}>
+        {title}
+      </span>
     </li>
   );
 }
