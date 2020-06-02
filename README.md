@@ -12,6 +12,7 @@ To setup this application please follow these instructions:
 2. Run the `git clone` command on your terminal to clone this repository and add the link provided by GitHub.
 3. A folder named Remote-Roofing will be added and you must change into this directory by running the following command `cd Remote-Roofing` on your terminal. 
 4. Once inside the Remote-Roofing directory you must run `npm install` or `yarn install` to install all the necessary dependencies. Please make sure you have either **npm** or **yarn** installed on your computer
+5. Run any of the scripts in the *Available Scripts* section to either start, test or build the application for production. These commands must be run in the terminal.
 
 ## Available Scripts
 
